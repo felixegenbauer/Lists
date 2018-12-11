@@ -19,7 +19,14 @@ def solution(A, K):
     >>> solution([1, 2], 0)
     [1, 2]
     """
-    return
+    counter=1
+    newlist=A
+    if len(A)!=0:
+        while counter <= K:
+            workinglist=[newlist[len(A)-1]]+newlist[:len(A)-1]
+            newlist=workinglist
+            counter=counter+1
+    return newlist
 
 
 if __name__ == '__main__':

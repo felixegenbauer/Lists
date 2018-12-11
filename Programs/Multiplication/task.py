@@ -24,7 +24,12 @@ def product(a_list):
     True
     """
     pass  # TODO; body of the function
-
+    v=1
+    for i in range(len(a_list)):
+        v=v*a_list[i]
+    if len(a_list) == 0:
+        v=0
+    return v
 
 if __name__ == '__main__':
     import doctest
